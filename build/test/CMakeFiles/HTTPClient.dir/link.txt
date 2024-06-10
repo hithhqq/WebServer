@@ -1,1 +1,0 @@
-/usr/bin/g++   -g -g  -rdynamic CMakeFiles/HTTPClient.dir/HttpClient.cpp.o  -o ../../bin/HTTPClient 
