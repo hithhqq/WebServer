@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 去除默认样式 */
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 黑体;
+            box-sizing: border-box;
+        }
+        /* 内容居中 底色 */
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #222;
+        }
+        /* 整体登陆盒子 */
+        .box{
+            position: relative;
+            width: 380px;
+            height: 420px;
+            background: #1c1c1c;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        /* 流光 */
+        .box::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 380px;
+            height: 420px;
+            background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45f3ff);
+            z-index: 1;
+            transform-origin: bottom right;
+            animation: animate 6s linear infinite;
+        }  
+        /* 流光 */
+        .box::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 380px;
+            height: 420px;
+            background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45f3ff);
+            z-index: 1;
+            transform-origin: bottom right;
+            animation: animate 6s linear infinite;
+            animation-delay: -3s;
+        }
+        /* 额外流光盒子 */
+        .borderLine{
+            position: absolute;
+            top: 0;
+            inset: 0;
+        }
+        /* 流光 */
+        .borderLine::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 380px;
+            height: 420px;
+            background: linear-gradient(0deg,transparent,transparent,#ff2770,#ff2770,#ff2770);
+            z-index: 1;
+            transform-origin: bottom right;
+            animation: animate 6s linear infinite;
+            animation-delay: -1.5s;
+        }  
+        /* 流光 */
+        .borderLine::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 380px;
+            height: 420px;
+            background: linear-gradient(0deg,transparent,transparent,#ff2770,#ff2770,#ff2770);
+            z-index: 1;
+            transform-origin: bottom right;
+            animation: animate 6s linear infinite;
+            animation-delay: -4.5s;
+        }
+        /* 动画 */
+        @keyframes animate {
+            0%{
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        /* 登录form表单 */
+        .box form {
+            position: absolute;
+            inset: 4px;
+            background: #222;
+            padding: 50px 40px;
+            border-radius: 8px;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+        }
+        /* 标题 */
+        .box form h2 {
+            color: #fff;
+            font-weight: 500;
+            text-align: center;
+            letter-spacing: 0.1em;
+        }
+        /* 输入框盒子 */
+        .box form .inputBox {
+            position: relative;
+            width: 300px;
+            margin-top: 35px;
+        }
+        /* 输入框 */
+        .box form .inputBox input {
+            position: relative;
+            width: 100%;
+            padding: 20px 10px 10px ;
+            background: transparent;
+            outline: none;
+            border: none;
+            box-shadow: none;
+            color: #23242a;
+            font-size: 1em;
+            letter-spacing: 0.05em;
+            transition: 0.5s;
+            z-index: 10
+        }
+        /* username和passward文字样式 */
+        .box form .inputBox span {
+            position: absolute;
+            left: 0;
+            padding: 20px 0px 10px ;
+            pointer-events: none;
+            color: #8f8f8f;
+            font-size: 1em;
+            letter-spacing: 0.05em;
+            transition: 0.5s;
+        }
+        /* 有效输入和获取焦点时 span上移 文字减小 */
+        .box form .inputBox input:valid ~ span,
+        .box form .inputBox input:focus ~ span{
+            color: #fff;
+            font-size: 0.75em;
+            transform: translateY(-34px);
+        }
+        /* 白色横线 */
+        .box form .inputBox i {
+            position: absolute; 
+            left: 0;
+            bottom: 0;
+            width: 97%;
+            height: 2px;
+            background: #fff;
+            border-radius: 4px;
+            overflow: hidden;
+            transition: 0.5s;
+            pointer-events: none;
+        }
+        /* 有效输入和获取焦点时  横线变高 */
+        .box form .inputBox input:valid ~ i,
+        .box form .inputBox input:focus ~ i{
+            height: 37px;
+        }
+        /* 忘记密码和注册盒子 */
+        .box form .links {
+            display: flex;
+            justify-content: space-between;
+        }
+        /* a链接 */
+        .box form .links a {
+            margin: 10px 0;
+            font-size: 0.75em;
+            color: #8f8f8f;
+            text-decoration: none;
+        }
+        /* hover时忘记密码变白  注册直接白色 */
+        .box form .links a:hover,
+        .box form .links a:nth-child(2){
+            color: #fff;
+        }
+        /* 登录按钮样式 */
+        .box form input[type="button"] {
+            border: none;
+            outline: none;
+            display: flex;
+            justify-content: center; 
+            padding: 9px 25px;
+            background: #fff;
+            cursor: pointer;
+            font-size: 0.9em;
+            border-radius: 4px;
+            font-weight: 600;
+            width: 100px;
+            margin-top: 10px;
+        }
+        /* 鼠标按下时 登录按钮整体透明80% */
+        .box form input[type="button"]:active {
+            opacity: 0.8;
+        }
+            /* 结果显示框样式 */
+    input[type="text"][readonly] {
+        width: 100%; /* 设置宽度 */
+        padding: 10px; /* 设置内边距 */
+        margin: 5px 0; /* 设置外边距 */
+        box-sizing: border-box; /* 盒模型设置 */
+        border: 1px solid #ccc; /* 设置边框 */
+        border-radius: 5px; /* 圆角边框 */
+        font-size: 15px; /* 设置字体大小 */
+        background-color: #f9f9f9; /* 设置背景颜色 */
+        color: #333; /* 设置文字颜色 */
+        margin-top: 10px;
+    }
+    </style>
+</head>
+<body>
+    <!-- 结构 -->
+    <div class="box">
+        <!-- 另外流光 -->
+        <span class="borderLine"></span>
+        <!-- 登录表单 -->
+        <form>
+            <h2>Application</h2>
+            <!-- money -->
+            <div class="inputBox">
+                <input type="text" required id="money">
+                <span>Money</span>
+                <i></i>
+            </div>
+            <!-- result -->
+            <div class="text">
+                <input type="text" id="result" readonly placeholder="Reslut">
+                <i></i>
+            </div>
+            <input type="button" value="Applicate" onclick="checkingLog()">
+        </form>
+    </div>
+</body>
+<script>
+    function checkingLog(){
+        var urlParams = new URLSearchParams(window.location.search);
+        var username = urlParams.get('username');
+
+        // 输出用户名到控制台
+        console.log("Received username: " + username);
+        const money = document.getElementById('money').value;
+        const url = 'http://172.30.18.225/applicate?' + encodeURIComponent(username) + '&' + encodeURIComponent(money);
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                console.log(data);
+                var text = document.getElementById('result');
+                if (data.includes('success')) {
+                    if(data.includes('1'))
+                    {
+                        text.value = "项目经理：申请成功";
+                    }
+                    else if(data.includes('2'))
+                    {
+                        text.value = "部门经理：申请成功";
+                    }
+                    else
+                    {
+                        text.value = "总经理：申请成功";
+                    }
+
+                }
+                else
+                {
+                    text.value = "金额太大，申请失败";
+                }
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+            });
+    }
+    
+</script>
+</html>

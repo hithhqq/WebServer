@@ -1,0 +1,14 @@
+/home/yeye/WebServer/build/CMakeFiles/rebuild_cache.dir
+/home/yeye/WebServer/build/CMakeFiles/edit_cache.dir
+/home/yeye/WebServer/build/base/CMakeFiles/rebuild_cache.dir
+/home/yeye/WebServer/build/base/CMakeFiles/edit_cache.dir
+/home/yeye/WebServer/build/base/CMakeFiles/libserver_base.dir
+/home/yeye/WebServer/build/base/tests/CMakeFiles/rebuild_cache.dir
+/home/yeye/WebServer/build/base/tests/CMakeFiles/edit_cache.dir
+/home/yeye/WebServer/build/base/tests/CMakeFiles/LoggingTest.dir
+/home/yeye/WebServer/build/net/CMakeFiles/rebuild_cache.dir
+/home/yeye/WebServer/build/net/CMakeFiles/edit_cache.dir
+/home/yeye/WebServer/build/net/CMakeFiles/WebServerCXX.dir
+/home/yeye/WebServer/build/test/CMakeFiles/rebuild_cache.dir
+/home/yeye/WebServer/build/test/CMakeFiles/edit_cache.dir
+/home/yeye/WebServer/build/test/CMakeFiles/HTTPClient.dir

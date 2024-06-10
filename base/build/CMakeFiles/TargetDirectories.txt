@@ -1,0 +1,6 @@
+/home/yeye/WebServer/base/build/CMakeFiles/rebuild_cache.dir
+/home/yeye/WebServer/base/build/CMakeFiles/edit_cache.dir
+/home/yeye/WebServer/base/build/CMakeFiles/libserver_base.dir
+/home/yeye/WebServer/base/build/tests/CMakeFiles/rebuild_cache.dir
+/home/yeye/WebServer/base/build/tests/CMakeFiles/edit_cache.dir
+/home/yeye/WebServer/base/build/tests/CMakeFiles/LoggingTest.dir

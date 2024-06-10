@@ -1,0 +1,1 @@
+/usr/bin/g++   -g -g  -rdynamic CMakeFiles/LoggingTest.dir/LoggingTest.cpp.o  -o ../../../bin/LoggingTest  ../libserver_base.a -lpthread -lrt -lmysqlclient 

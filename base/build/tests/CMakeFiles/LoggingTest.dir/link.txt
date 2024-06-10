@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/LoggingTest.dir/LoggingTest.o  -o LoggingTest   -L/home/yeye/WebServer/base/build  ../libserver_base.a -lpthread -lrt 

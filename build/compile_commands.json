@@ -1,0 +1,107 @@
+[
+{
+  "directory": "/home/yeye/WebServer/build/base",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/libserver_base.dir/AsyncLogging.cpp.o -c /home/yeye/WebServer/base/AsyncLogging.cpp",
+  "file": "/home/yeye/WebServer/base/AsyncLogging.cpp"
+},
+{
+  "directory": "/home/yeye/WebServer/build/base",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/libserver_base.dir/CountDownLatch.cpp.o -c /home/yeye/WebServer/base/CountDownLatch.cpp",
+  "file": "/home/yeye/WebServer/base/CountDownLatch.cpp"
+},
+{
+  "directory": "/home/yeye/WebServer/build/base",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/libserver_base.dir/FileUtil.cpp.o -c /home/yeye/WebServer/base/FileUtil.cpp",
+  "file": "/home/yeye/WebServer/base/FileUtil.cpp"
+},
+{
+  "directory": "/home/yeye/WebServer/build/base",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/libserver_base.dir/LogFile.cpp.o -c /home/yeye/WebServer/base/LogFile.cpp",
+  "file": "/home/yeye/WebServer/base/LogFile.cpp"
+},
+{
+  "directory": "/home/yeye/WebServer/build/base",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/libserver_base.dir/Logging.cpp.o -c /home/yeye/WebServer/base/Logging.cpp",
+  "file": "/home/yeye/WebServer/base/Logging.cpp"
+},
+{
+  "directory": "/home/yeye/WebServer/build/base",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/libserver_base.dir/LogStream.cpp.o -c /home/yeye/WebServer/base/LogStream.cpp",
+  "file": "/home/yeye/WebServer/base/LogStream.cpp"
+},
+{
+  "directory": "/home/yeye/WebServer/build/base",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/libserver_base.dir/Thread.cpp.o -c /home/yeye/WebServer/base/Thread.cpp",
+  "file": "/home/yeye/WebServer/base/Thread.cpp"
+},
+{
+  "directory": "/home/yeye/WebServer/build/base",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/libserver_base.dir/ConnectionPool.cpp.o -c /home/yeye/WebServer/base/ConnectionPool.cpp",
+  "file": "/home/yeye/WebServer/base/ConnectionPool.cpp"
+},
+{
+  "directory": "/home/yeye/WebServer/build/base",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/libserver_base.dir/MysqlConn.cpp.o -c /home/yeye/WebServer/base/MysqlConn.cpp",
+  "file": "/home/yeye/WebServer/base/MysqlConn.cpp"
+},
+{
+  "directory": "/home/yeye/WebServer/build/base/tests",
+  "command": "/usr/bin/g++     -g -g   -o CMakeFiles/LoggingTest.dir/LoggingTest.cpp.o -c /home/yeye/WebServer/base/tests/LoggingTest.cpp",
+  "file": "/home/yeye/WebServer/base/tests/LoggingTest.cpp"
+},
+{
+  "directory": "/home/yeye/WebServer/build/net",
+  "command": "/usr/bin/g++     -g -D_PTHREADS -g   -o CMakeFiles/WebServerCXX.dir/Channel.cpp.o -c /home/yeye/WebServer/net/Channel.cpp",
+  "file": "/home/yeye/WebServer/net/Channel.cpp"
+},
+{
+  "directory": "/home/yeye/WebServer/build/net",
+  "command": "/usr/bin/g++     -g -D_PTHREADS -g   -o CMakeFiles/WebServerCXX.dir/Epoll.cpp.o -c /home/yeye/WebServer/net/Epoll.cpp",
+  "file": "/home/yeye/WebServer/net/Epoll.cpp"
+},
+{
+  "directory": "/home/yeye/WebServer/build/net",
+  "command": "/usr/bin/g++     -g -D_PTHREADS -g   -o CMakeFiles/WebServerCXX.dir/EventLoop.cpp.o -c /home/yeye/WebServer/net/EventLoop.cpp",
+  "file": "/home/yeye/WebServer/net/EventLoop.cpp"
+},
+{
+  "directory": "/home/yeye/WebServer/build/net",
+  "command": "/usr/bin/g++     -g -D_PTHREADS -g   -o CMakeFiles/WebServerCXX.dir/EventLoopThread.cpp.o -c /home/yeye/WebServer/net/EventLoopThread.cpp",
+  "file": "/home/yeye/WebServer/net/EventLoopThread.cpp"
+},
+{
+  "directory": "/home/yeye/WebServer/build/net",
+  "command": "/usr/bin/g++     -g -D_PTHREADS -g   -o CMakeFiles/WebServerCXX.dir/EventLoopThreadPool.cpp.o -c /home/yeye/WebServer/net/EventLoopThreadPool.cpp",
+  "file": "/home/yeye/WebServer/net/EventLoopThreadPool.cpp"
+},
+{
+  "directory": "/home/yeye/WebServer/build/net",
+  "command": "/usr/bin/g++     -g -D_PTHREADS -g   -o CMakeFiles/WebServerCXX.dir/HttpData.cpp.o -c /home/yeye/WebServer/net/HttpData.cpp",
+  "file": "/home/yeye/WebServer/net/HttpData.cpp"
+},
+{
+  "directory": "/home/yeye/WebServer/build/net",
+  "command": "/usr/bin/g++     -g -D_PTHREADS -g   -o CMakeFiles/WebServerCXX.dir/Main.cpp.o -c /home/yeye/WebServer/net/Main.cpp",
+  "file": "/home/yeye/WebServer/net/Main.cpp"
+},
+{
+  "directory": "/home/yeye/WebServer/build/net",
+  "command": "/usr/bin/g++     -g -D_PTHREADS -g   -o CMakeFiles/WebServerCXX.dir/Server.cpp.o -c /home/yeye/WebServer/net/Server.cpp",
+  "file": "/home/yeye/WebServer/net/Server.cpp"
+},
+{
+  "directory": "/home/yeye/WebServer/build/net",
+  "command": "/usr/bin/g++     -g -D_PTHREADS -g   -o CMakeFiles/WebServerCXX.dir/Timer.cpp.o -c /home/yeye/WebServer/net/Timer.cpp",
+  "file": "/home/yeye/WebServer/net/Timer.cpp"
+},
+{
+  "directory": "/home/yeye/WebServer/build/net",
+  "command": "/usr/bin/g++     -g -D_PTHREADS -g   -o CMakeFiles/WebServerCXX.dir/Util.cpp.o -c /home/yeye/WebServer/net/Util.cpp",
+  "file": "/home/yeye/WebServer/net/Util.cpp"
+},
+{
+  "directory": "/home/yeye/WebServer/build/test",
+  "command": "/usr/bin/g++     -g -g   -o CMakeFiles/HTTPClient.dir/HttpClient.cpp.o -c /home/yeye/WebServer/test/HttpClient.cpp",
+  "file": "/home/yeye/WebServer/test/HttpClient.cpp"
+}
+]
